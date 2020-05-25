@@ -76,6 +76,5 @@ setwd("../")
 
 
 # export output and output_summary
-write.table(output, "merged_data.txt", row.names = F)
-write.table(output_summary, "merged_data_summarized.txt", row.names = F)
-write.table(names(output), "merged_data_variables.txt", row.names = F, col.names = F)
+# write.table(output, "merged_data.txt", row.names = F)  # export not needed for project
+write.table(output_summary, "merged_data_summarized.txt", row.names = F, quote = F)
