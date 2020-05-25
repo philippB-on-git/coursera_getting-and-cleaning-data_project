@@ -11,7 +11,9 @@ Via Opera Pia 11A, I-16145, Genoa, Italy.
 activityrecognition@smartlab.ws
 www.smartlab.ws
 
-## Description of this analysis
+The description of the original dataset is provided below.
+
+## Description of this analysis (processing)
 ### Getting data
 The provided scrpit _run_analysis.R_ will check in the directory in which it is executed if the original dataset (_see below_) has already been downloaded and extracted. If not data will be downloaded ([Human Activity Recognition using Smartphones](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)) and extracted.
 
@@ -27,14 +29,9 @@ For both the _test_ and the _train_ datasets, the corresponding files are merged
 The merged train dataset is then appended to the merged train dataset. Next, the activity_labels are merged. The feature names from features.txt are used for the column names of the measurements. 
 
 ### The results
-From the resulting dataset only the subject_id, the activity label and columns containing mean or std values of the measurements are extracted, forming the final datset *merged_data*. Finally, the column names are reformatted to be more readible.
-A detailed description of the contained columns in the final dataset is provided in the ***code book**.
+From the resulting dataset only the subject_id, the activity label and columns containing mean or std values of the measurements are extracted. The column names are reformatted to be more readible. A detailed description of the contained columns in the final dataset is provided in the ***code book**.
 
-The merged_data dataset is then used for a summary of the data *merged_data_summarized*, calculating the mean value of each variable is calculated per subject_id and activity.
-
-The script writes two tables in the directory in which the script is executed.
-* merged_data.txt  containing the dataset resulting from the complete merge
-* merged_data_summarized.txt  containing the mean of each variable for each (subject_id,activity) group.
+Finally, the dataset is then used for a summary of the data, calculating the mean value of each variable is calculated per subject_id and activity. This is the final result, which is written as *merged_data_summarized.txt* into the directory in which the script was executed.
 
 ## Description of the original dataset
 
