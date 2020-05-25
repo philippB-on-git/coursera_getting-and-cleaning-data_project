@@ -11,7 +11,9 @@ Via Opera Pia 11A, I-16145, Genoa, Italy.
 activityrecognition@smartlab.ws
 www.smartlab.ws
 
-## Description of this analysis
+The description of the original dataset is provided below.
+
+## Description of this analysis (processing)
 ### Getting data
 The provided scrpit _run_analysis.R_ will check in the directory in which it is executed if the original dataset (_see below_) has already been downloaded and extracted. If not data will be downloaded ([Human Activity Recognition using Smartphones](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)) and extracted.
 
